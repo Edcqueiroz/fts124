@@ -1,0 +1,189 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 7382044100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "consultarPO.Iniciar()"
+            }
+          },
+          {
+            "result": {
+              "duration": 5548692900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "consultar.Iniciar()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "Busca Termo Unico com Enter",
+        "description": "",
+        "id": "busca-termo;busca-termo-unico-com-enter",
+        "after": [
+          {
+            "result": {
+              "duration": 739180300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "consultarPO.Finalizar()"
+            }
+          },
+          {
+            "result": {
+              "duration": 876870100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "consultar.Finalizar()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1807822600,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "que acesso o site do Google",
+            "match": {
+              "location": "consultar.que_acesso_o_site_do_Google()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1842280400,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "digito o termo \"feriado\" e pressiono Enter",
+            "match": {
+              "arguments": [
+                {
+                  "val": "feriado",
+                  "offset": 16
+                }
+              ],
+              "location": "consultar.digito_o_termo_e_pressiono_Enter(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 350719000,
+              "status": "passed"
+            },
+            "comments": [
+              {
+                "line": 6,
+                "value": "#\tAnd pressiono o Enter"
+              }
+            ],
+            "line": 7,
+            "name": "Vejo os resultados e a guia \"feriado - Pesquisa Google\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "feriado - Pesquisa Google",
+                  "offset": 29
+                }
+              ],
+              "location": "consultar.vejo_os_resultados_e_a_guia(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Busca Termo",
+    "description": "",
+    "id": "busca-termo",
+    "keyword": "Feature",
+    "uri": "consultar.feature"
+  },
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "#language: pt"
+      }
+    ],
+    "line": 2,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 5622206300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "consultarPO.Iniciar()"
+            }
+          },
+          {
+            "result": {
+              "duration": 5582846800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "consultar.Iniciar()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Busca com sucesso por uma unica palavra",
+        "description": "",
+        "id": "buscar-por-termo;busca-com-sucesso-por-uma-unica-palavra",
+        "type": "scenario",
+        "keyword": "Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1444108500,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "que acesso o site do Google",
+            "match": {
+              "location": "consultar.que_acesso_o_site_do_Google()"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "line": 6,
+            "name": "digito o termo \"feriado\"",
+            "keyword": "Quando "
+          },
+          {
+            "line": 7,
+            "name": "clico no Enter",
+            "keyword": "E "
+          },
+          {
+            "line": 8,
+            "name": "exibe a lista de resultados com o titulo \"feriado - Pesquisa Google\"",
+            "keyword": "Entao "
+          }
+        ]
+      }
+    ],
+    "name": "Buscar por termo",
+    "description": "Se aplica a qualquer usu�rio",
+    "id": "buscar-por-termo",
+    "keyword": "Funcionalidade",
+    "uri": "consultarPT.feature"
+  }
+]
